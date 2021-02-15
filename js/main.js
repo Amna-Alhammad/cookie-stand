@@ -13,7 +13,7 @@ function getRandomNumber(min, max) {
  avgSale : 6.3 ,
  cookiePerHour: [],
  totalCookie : 0 ,
-    countCokiePerHour: function (){
+    countCookiePerHour: function (){
         for( let i=0 ; i<hours.length ; i++ )
         let cookie = getRandomNumber (this.maxC,this.maxC)* this.avgSale;
        this.totalCookie  += cookie;
@@ -21,6 +21,7 @@ function getRandomNumber(min, max) {
     },
  
 render : function(){
+    this.countCookiePerHour();
     const container = document.getElementById('sales-data');
     
     console.log(container);
@@ -61,6 +62,7 @@ render : function(){
        },
     
    render : function(){
+    this.countCookiePerHour();
        const container = document.getElementById('sales-data');
        
        console.log(container);
@@ -102,6 +104,7 @@ render : function(){
        },
     
    render : function(){
+    this.countCookiePerHour();
        const container = document.getElementById('sales-data');
        
        console.log(container);
@@ -142,6 +145,7 @@ render : function(){
            },
         
        render : function(){
+        this.countCookiePerHour();
            const container = document.getElementById('sales-data');
            
            console.log(container);
@@ -182,6 +186,7 @@ render : function(){
                },
             
            render : function(){
+            this.countCookiePerHour();
                const container = document.getElementById('sales-data');
                
                console.log(container);
@@ -206,7 +211,7 @@ render : function(){
                liEl.textContent = `Total ${ this.totalCookie} cookies`;
            },
             }
-        
+this.countCookiePerHour();
   seattle.render ();
   tokyo.render ();
   dubai.render ();
