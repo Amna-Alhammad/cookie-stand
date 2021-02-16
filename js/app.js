@@ -5,23 +5,25 @@ function getRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-function Branch (location , minC ,maxC , avgSale ,){
+function Branch (location , minC ,maxC , avgSale){
     this.location = location;
     this.minC = minC;
 this. maxC = maxC;
 this.avgSale = avgSale;
-this.cookiePerHour = cookiePerHour ;
+this.cookiePerHour = [] ;
+this.
 this.totalCookie = totalCookie;
 
 }
 
 Branch.prototype.countCookiePerHour=function (){
+    let  customers =0;
     for( let i=0 ; i<hours.length ; i++ )
-    let cookie = getRandomNumber (this.maxC,this.maxC)* this.avgSale;
-   this.totalCookie  += cookie;
-    this.cookiePerHour.push (cookie);}
+    customers = getRandomNumber (this.maxC,this.maxC)* this.avgSale;
+   this.totalCookie  += customers;
+    this.cookiePerHour.push (customers);};
 
-    this.countCookiePerHour();
+    // this.countCookiePerHour();
 
    Branch.prototype.render = function(){
         
