@@ -1,5 +1,13 @@
 h1 {
-color: rgb(253, 165, 0);
-font-size: large;
+    color: rgb(253, 165, 0);
+    font-size: large;
+    margin-left: 500px;
+}
 
+#sales-data {
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    border: 5px solid #55534e;
+    padding: 10px;
 }
