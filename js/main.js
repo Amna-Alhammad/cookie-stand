@@ -92,6 +92,25 @@ function createFooterTable() {
 }
 
 
+/////////////////////////////////////////
+const form = document.getElementById('cookieform');
+form.addEventListener('submit', function(event){
+  event.preventDefault();
+
+  const theMinCustomer = event.target.mincus.value;
+  const theMaxCustomer = event.target.maxcus.value;
+  const averageNum = event.target.avg.value;
+  const branchLocation = event.target.location.value;
+
+
+  const newBranch = new Shop(branchLocation,theMinCustomer , theMaxCustomer ,averageNum);
+  mainTable.removeChild(mainTable.lastChild);
+  newBranch.render();
+  form.reset();
+
+  createFooterTable();
+});
+///////////////////////////////
 const seattle = new Shop('Seattle', 23, 65, 6.3);
 const tokyo = new Shop('Tokyo', 3, 24, 1.2);
 const dubai = new Shop('Dubai', 11, 38, 3.7);

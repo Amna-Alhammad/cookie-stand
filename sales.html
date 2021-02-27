@@ -9,14 +9,35 @@
 
 <body>
     <header>
-        <h1> Pat's Salmon Cookyes : Sales Data </h1>
+        <h1 style="color: aliceblue; font-size: large; text-align: center;font-family:cursive;"> Pat's Salmon Cookyes : Sales Data </h1>
     </header>
     <main>
+        <section>
+            <form id="cookieform">
+              <fieldset>
+                <legend> Enter Branch Details</legend>
+    
+                <label for="location">Location</label>
+                <input type="text" id="location" placeholder="Enter The Location Here">
+    
+                <label for="mincus">Minimum Customers Per Hour</label>
+                <input type="number" id="mincus" required>
+    
+                <label for="maxcus">Maximum Customers Per Hour</label>
+                <input type="number" id="maxcus" required>
+    
+                <label for="avg">Average cookies per customer</label>
+                <input type="number" id="avg" required>
+    
+                <input type="submit">
+              </fieldset>
+            </form>
+          </section>
         <br>
-        <section id="sales-data"></section>
+        <section id="sales-data" ></section>
     </main>
     <footer>
-        <script src="js/main.js"></script>
+        <script src="js/main.js" ></script>
     </footer>
 </body>
 
