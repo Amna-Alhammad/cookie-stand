@@ -1,7 +1,72 @@
-h1 {
-    color: rgb(253, 165, 0);
-    font-size: large;
-    margin-left: 500px;
+  
+* {
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #e4e4a9;
+  }
+  /* header{
+      background-color: #141413;
+  } */
+  #par {
+
+    color:rgb(57, 114, 71);
+    text-align:center;
+    font-size: 30px;
+    font-family:cursive;
+    margin-top: 100px;
+    margin-left: 20px;
+    padding-bottom: 30px;
+    
+    
+  }
+  #logo {
+  margin-right: 300px;    
+  width: 180px;
+  height: 100px;
+  }
+  header section div {
+    float:right;
+    padding-left: 10px;
+
+}
+.text1{
+    text-align: center;
+    font-size: 50px;
+  font-family:cursive;
+  margin-right:500px;
+  color: rgb(57, 114, 71);
+}
+.text {
+    text-align: center; 
+    font-family:cursive;
+   font-size:larger;
+   margin-right:500px;
+   color: rgb(107, 155, 125);
+}
+
+ #f {
+    margin-left: 500px;    
+    width: 400px;
+    height: 300px;
+    /* float: right; */
+    margin-top: 0px;
+    margin-right: 150px;
+
+ }
+header nav ul {
+    display: inline-block;
+}
+header nav ul li {
+
+    display: inline-block;
+    padding: 10px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: rgb(51, 95, 68);
+    font-size: 25px;
+    font-weight: 100;
 }
 
 #sales-data {
@@ -10,4 +75,75 @@ h1 {
     margin-right: 200px;
     border: 5px solid #55534e;
     padding: 10px;
+}
+#branches{
+    color: rgb(57, 114, 71);
+    text-align: center;
+    font-size: 30px;
+    font-family:cursive;
+}
+#city {
+    
+    color: rgb(48, 83, 62);
+    text-align: center;
+    border: #55534e;
+}
+#img1 {
+    margin-left: 300px;
+    margin: 15px;
+    float: left;
+}
+#img2 {
+    margin: 15px;
+    float: left;
+}
+#img3{
+    margin: 15px;
+    float: left;
+}
+#img4 {
+    margin: 15px;
+    float: left;
+}
+#img5 {
+    margin: 15px;
+    float: left;
+}
+.all-images{
+    margin-left: 200px;
+}
+#open {
+    color: rgb(221, 133, 33);
+   paint-order:unset;
+   /* position:absolute; */
+   text-align: center; 
+   font-family:cursive;
+  font-size: 40px;
+  /* margin: 10%; */
+  padding: 10px;
+  border: white;
+}
+
+#gift {
+    color:rgb(57, 114, 71);
+    /* text-align: center;  */
+    font-size: 30px;
+    font-family:cursive;
+   
+}
+#g1 {   margin: 15px;
+    float: left;}
+#g2 {   margin: 15px;
+    float: left;}
+#g3 {   margin: 15px;
+    float: left;}
+#g4 {   margin: 15px;
+    float: left;}
+#g5 {   margin: 15px;
+    /* float: left;} */}
+#all-gift{
+    margin-left: 200px;
+}
+footer{
+    display: inline-block;
 }
